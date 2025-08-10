@@ -62,8 +62,8 @@ Byte-Sized Secrets is a web-based interactive tool that allows users to explore 
 
 ## Usage
 
-- Select an encryption algorithm from the dropdown menu.
-- Enter your plaintext in the provided text area.
-- Adjust any algorithm-specific parameters (e.g., Shift for Caesar, Keyword for Vigenere).
-- Click the "Apply" button to see the ciphertext and the detailed manual walkthrough.
-- Use the "About" and "Algorithms" buttons in the header to learn more about cybersecurity and the ciphers.
+- Choose an encryption algorithm from the dropdown menu.  
+- Type or paste your plaintext into the text area.  
+- Adjust algorithm-specific settings (e.g., Caesar shift value, Vigenere keyword) as needed.  
+- Click **Apply** to instantly view the ciphertext along with a detailed, step-by-step walkthrough of the encryption process.  
+- Explore the **About** and **Algorithms** pages to learn more about cybersecurity fundamentals and the theory behind each cipher.  
