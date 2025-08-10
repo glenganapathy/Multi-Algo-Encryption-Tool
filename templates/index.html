@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte-Sized Secrets</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+    <div class="main-content-wrapper">
+    <div class="container">
+      <header>
+        <div>
+          <h1>BYTE-SIZED SECRETS</h1>
+          <p>Interactive multi-algorithm encryption tool.</p>
+        </div>
+        <nav>
+          <button id="about-btn">About</button>
+          <button id="algorithms-btn">Algorithms</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="controls">
+          <label for="algorithm">Algorithm</label>
+          <select id="algorithm">
+            <option>Caesar</option>
+            <option value="Mono">Monoalphabetic</option>
+            <option>Playfair</option>
+            <option>Hill</option>
+            <option>Vigenere</option>
+            <option>OTP</option>
+            <option value="Transposition">Transposition</option>
+          </select>
+
+          <div class="input-group">
+            <label for="plaintext">Plaintext (preserved)</label>
+            <textarea id="plaintext" rows="4">
+Hello, world! This is a test.</textarea
+            >
+          </div>
+
+          <div id="algo-inputs"></div>
+
+          <div class="input-group">
+            <button id="apply-btn">Encrypt</button>
+            <button id="download-otp-btn" style="display: none">
+              Download OTP
+            </button>
+          </div>
+        </section>
+
+        <section class="output">
+          <div class="output-group">
+            <label for="ciphertext">Ciphertext</label>
+            <div id="ciphertext" class="output-box"></div>
+            <p>
+              (Cipher text shown above; non-letters preserved where applicable.)
+            </p>
+          </div>
+
+          <div class="output-group">
+            <label for="walkthrough">Manual Walkthrough / Visuals</label>
+            <div id="walkthrough" class="output-box"></div>
+          </div>
+
+          <div class.output-group>
+            <h3>Notes</h3>
+            <ul>
+              <li>
+                Letter-based ciphers preserve spaces & punctuation; Playfair &
+                Hill work on letters-only then merge back.
+              </li>
+              <li>
+                Padding letters (if any) are shown in the details and appended
+                in brackets.
+              </li>
+              <li>
+                OTP key is generated in-browser using secure RNG — keep it
+                secret.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        Made by Ganapathy PM(1CR22CI036), Noor Sariya Iffath(1CR22CI035)
+      </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+  </div>
+  </body>
+</html>
